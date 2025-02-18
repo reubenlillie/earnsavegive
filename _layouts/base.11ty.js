@@ -34,7 +34,10 @@ export async function render(data) {
   </head>
   <body>
     <header>
-      <h1>${meta.title}</h1>
+      <h1>${data.page.url === '/'
+        ? meta.title
+        : `<a href="/">${meta.title}</a>`
+      }</h1>
       <p>${meta.tagline}</p>
     </header>
     <main>
