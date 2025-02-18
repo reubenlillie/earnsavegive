@@ -1,6 +1,6 @@
 {
   "name": "earnsavegive",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Personal finance with a higher purpose",
   "main": "index.js",
   "scripts": {
