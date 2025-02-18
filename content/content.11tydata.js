@@ -1,10 +1,10 @@
 /**
- * @file Contains metadata common to all pages, to reduce repetition
+ * @file Contains data common to all content, to reduce repetition
  * @author Reuben L. Lillie <reuben@earnsavegive.co>
  */
 
 /**
- * Directory data module
+ * Directory data module for content
  * @module pages
  * @since 0.1.0
  * @see {@link https://www.11ty.dev/docs/data-template-dir/ Template and directory data files in Eleventy}
