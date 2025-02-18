@@ -1,6 +1,6 @@
 /**
  * @file Contains global metadata
- * @author Reuben L. Lillie <reubenlillie@gmail.com>
+ * @author Reuben L. Lillie <reuben@earnsavegive.co>
  */
 
 /**

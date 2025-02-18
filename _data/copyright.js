@@ -1,6 +1,6 @@
 /**
  * @file Contains global copyright data
- * @author Reuben L. Lillie <reubenlillie@gmail.com>
+ * @author Reuben L. Lillie <reuben@earnsavegive.co>
  */
 
 import meta from './meta.js'
