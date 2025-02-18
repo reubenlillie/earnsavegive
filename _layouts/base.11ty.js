@@ -1,7 +1,6 @@
 /**
  * @file The base layout
  * @author Reuben L. Lillie <reuben@earnsavegive.co>
- * @since 0.1.0
  * @see {@link https://www.11ty.dev/docs/layouts/ Layouts in Eleventy}
  * @see {@link https://www.11ty.dev/docs/layout-chaining/ Layout chaining in Eleventy}
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#optional-data-method Optional `data` method in Eleventy JavaScript templates}
@@ -9,6 +8,7 @@
 
 /**
  * Defines markup for the base template
+ * @since 0.1.0
  * @param {Object} data Elevent’s `data` object
  * @return {string} HTML
  */
