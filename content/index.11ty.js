@@ -20,7 +20,7 @@ export var data = {
  */
 export function render(data) {
   return `<!--content/index.11ty.js-->
-## 🚧 Please pardon our dust with we build something nifty! 🏗️
+## 🚧 Please pardon our dust while we build something nifty! 🏗️
 
 🔜 ${data.meta.description}`
 }
