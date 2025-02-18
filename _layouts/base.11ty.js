@@ -44,7 +44,13 @@ export async function render(data) {
       ${data.content}
     </main>
     <footer>
-      <p>&copy; ${copyright.date} ${copyright.holder}</p>
+      <section>
+        <h2>${meta.disclaimer.heading}</h2>
+        <p>${meta.disclaimer.text}</p>
+      </section>
+      <section>
+        <p>&copy; ${copyright.date} ${copyright.holder}</p>
+      </section>
     </footer>
   </body>
 <html>`
