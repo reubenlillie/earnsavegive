@@ -28,8 +28,47 @@ export async function render(data) {
     <meta name="description" content="${meta.description}">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>">
     <style>
+      /**
+       * Add Metropolis font by Chris Simpson
+       * @see {@link https://github.com/dw5/metropolis Metropolis on GitHub}
+       */
+      @font-face {
+        font-family: Metropolis;
+        src:
+          local(Metropolis),
+          url('/fonts/metropolis/Metropolis-Regular.woff2') format('woff2');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: Metropolis;
+        src:
+          local(Metropolis),
+          url('/fonts/metropolis/Metropolis-Bold.woff2') format('woff2');
+        font-weight: 700;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: Metropolis;
+        src:
+          local(Metropolis),
+          url('/fonts/metropolis/Metropolis-RegularItalic.woff2') format('woff2');
+        font-weight: 400;
+        font-style: italic;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: Metropolis;
+        src:
+          local(Metropolis),
+          url('/fonts/metropolis/Metropolis-BoldItalic.woff2') format('woff2');
+        font-weight: 700;
+        font-style: italic;
+        font-display: swap;
+      }
       body {
-        font-family: sans-serif;
+        font-family: Metropolis, sans-serif;
       }
     </style>
   </head>
@@ -47,7 +86,7 @@ export async function render(data) {
     <footer>
       <section>
         <h2>${meta.disclaimer.heading}</h2>
-        <p>${meta.disclaimer.text}</p>
+        <p><em>${meta.disclaimer.text}</em></p>
       </section>
       <section>
         <p>&copy; ${copyright.date} ${copyright.holder}</p>

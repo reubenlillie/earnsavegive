@@ -17,4 +17,9 @@ export default async function (eleventyConfig) {
    * @see {@link https://www.11ty.dev/docs/config/#directory-for-layouts-optional Directory for Eleventy layouts}
    */
   eleventyConfig.setLayoutsDirectory('_layouts')
+
+  /*
+   * Copy assets to the output folder
+   */
+  eleventyConfig.addPassthroughCopy('fonts')
 }
