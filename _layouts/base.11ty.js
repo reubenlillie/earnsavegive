@@ -15,6 +15,7 @@
 export async function render(data) {
   var {
     copyright,
+    img: {logo},
     meta
   } = data
 
@@ -74,7 +75,10 @@ export async function render(data) {
   </head>
   <body>
     <header>
-      <img src="/img/logo.svg" alt="EarnSaveGive logo: the letters E-S-G with the S styled as a US dollar symbol">
+      ${this.fileExists(logo.filePath)
+        ? `<img src="/${logo.filePath}" alt="${logo.altText}">`
+        : `<!--No logo file at ${logo.filePath}-->`
+      }
       <h1>${data.page.url === '/'
         ? meta.title
         : `<a href="/">${meta.title}</a>`
