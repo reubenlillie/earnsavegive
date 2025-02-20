@@ -74,6 +74,7 @@ export async function render(data) {
   </head>
   <body>
     <header>
+      <img src="/img/logo.svg" alt="EarnSaveGive logo: the letters E-S-G with the S styled as a US dollar symbol">
       <h1>${data.page.url === '/'
         ? meta.title
         : `<a href="/">${meta.title}</a>`

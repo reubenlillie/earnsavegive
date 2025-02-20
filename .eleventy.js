@@ -22,4 +22,5 @@ export default async function (eleventyConfig) {
    * Copy assets to the output folder
    */
   eleventyConfig.addPassthroughCopy('fonts')
+  eleventyConfig.addPassthroughCopy('img')
 }
