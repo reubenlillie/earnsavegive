@@ -14,7 +14,8 @@
   "author": {
     "name": "Reuben L. Lillie",
     "email": "reuben@earnsavegive.co",
-    "url": "https://reubenlillie.com/",
+    "url": "https://reubenlillie.com/"
+  },
   "license": "MIT",
   "type": "module",
   "bugs": {
