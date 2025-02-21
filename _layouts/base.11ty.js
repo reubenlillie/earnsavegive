@@ -16,7 +16,8 @@ export async function render(data) {
   var {
     copyright,
     img: {logo},
-    meta
+    meta,
+    social
   } = data
 
   return `<!--_layouts/base.11ty.js-->
@@ -29,7 +30,7 @@ export async function render(data) {
     <meta name="description" content="${meta.description}">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>">
     <style>${this.fileExists('css/fonts.css')
-      ? this.fileToString('css/fonts.css')
+      ? this.minifyCss(this.fileToString('css/fonts.css'))
       : '<!--No file at css/fonts.css-->'}</style>
   </head>
   <body>
@@ -48,6 +49,11 @@ export async function render(data) {
       ${data.content}
     </main>
     <footer>
+      <section>
+        <ul>${social.map(account => `<li>
+            <a href="${account.url}">${account.name}</a>
+          </li>`).join(' ')}</ul>
+      </section>
       <section>
         <h2>${meta.disclaimer.heading}</h2>
         <p><em>${meta.disclaimer.text}</em></p>
