@@ -11,7 +11,7 @@
  */
 export default {
   baseUrl: 'https://earnsavegive.co', // No trailing slash
-  description: 'Earn Save Give shares tips and strategies to help you earn more, save smarter, and give back with purpose. Explore practical advice on credit cards, budgeting, investing, and charitable giving to build wealth and live a meaningful life. Life isn’t about how much you have, but what you do with it. Take charge of your finances today—whether you’re just starting out or looking to optimize every dollar. Let’s put your money to work.',
+  description: 'EarnSaveGive helps you earn more 💰, save smarter 💡, and give back with purpose 💌. Get tips on credit cards 💳, budgeting 📊, investing 📈, and charitable giving 🫶 to build wealth 💸 and live meaningfully 🔑.',
   disclaimer: {
     heading: 'Our Promise to You',
     text: 'At Earn Save Give, we’re dedicated to helping you earn more, save smarter, and give back with purpose. Some of the links on our site may earn us a commission if you apply for a product or service. This compensation, however, does not influence our reviews or recommendations. We value transparency so you can make financial decisions with confidence.'
