@@ -4,7 +4,8 @@
   "description": "Personal finance with a higher purpose",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "ELEVENTY_ENV=production npx @11ty/eleventy",
+    "dev": "ELEVENTY_ENV=development npx @11ty/eleventy --serve"
   },
   "repository": {
     "type": "git",
