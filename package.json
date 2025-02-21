@@ -22,7 +22,8 @@
     "url": "https://github.com/reubenlillie/earnsavegive/issues"
   },
   "homepage": "https://github.com/reubenlillie/earnsavegive#readme",
-  "dependencies": {
-    "@11ty/eleventy": "^3.0.0"
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "dotenv": "^16.4.7"
   }
 }
