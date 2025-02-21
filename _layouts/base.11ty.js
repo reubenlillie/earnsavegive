@@ -17,6 +17,7 @@ export async function render(data) {
     copyright,
     img: {logo},
     meta,
+    newsletter,
     social
   } = data
 
@@ -47,6 +48,19 @@ export async function render(data) {
     </header>
     <main>
       ${data.content}
+      <section>
+        <h2>Sign up for our newsletter for the latest tips and deals.</h2>
+        <form action="${newsletter.formAction}"
+              method="post"
+              target="popupwindow"
+              onsubmit="window.open('${newsletter.onSubmitUrl}', 'popupwindow')"
+              class="embeddable-buttondown-form">
+          <label for="bd-email">Your email:</label>
+          <input type="email" name="email" id="bd-email" />
+          <input type="submit" value="Subscribe" />
+          <span>via <a href="${newsletter.provider.url}" target="_blank">${newsletter.provider.name}</a></span>
+        </form>
+      </section>
     </main>
     <footer>
       <section>
