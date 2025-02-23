@@ -25,7 +25,7 @@
   "homepage": "https://github.com/reubenlillie/earnsavegive#readme",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@shenangopress/catharticons": "^1.0.0",
+    "@shenangopress/catharticons": "^1.0.1",
     "clean-css": "^5.3.3",
     "dotenv": "^16.4.7"
   }
