@@ -40,7 +40,7 @@ export async function render(data) {
   <body>
     <header>
       ${this.fileExists(logo.filePath)
-        ? `<img src="/${logo.filePath}" alt="${logo.altText}">`
+        ? this.fileToString(logo.filePath)
         : `<!--No logo file at ${logo.filePath}-->`
       }
       <h1>${data.page.url === '/'
