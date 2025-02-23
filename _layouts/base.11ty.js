@@ -6,6 +6,9 @@
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#optional-data-method Optional `data` method in Eleventy JavaScript templates}
  */
 
+// Import modules
+import catharticons from '@shenangopress/catharticons'
+
 /**
  * Defines markup for the base template
  * @since 0.1.0
@@ -65,7 +68,7 @@ export async function render(data) {
     <footer>
       <section>
         <ul>${social.map(account => `<li>
-            <a href="${account.url}">${account.name}</a>
+            <a href="${account.url}">${catharticons(account.name)}&nbsp;${account.name}</a>
           </li>`).join(' ')}</ul>
       </section>
       <section>
